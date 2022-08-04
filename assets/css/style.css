@@ -1,0 +1,1212 @@
+/**
+* Template Name: BizLand - v1.2.1
+* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+a {
+    color: #4DA814;
+    ;
+}
+
+a:hover {
+    color: #4DA814;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #4DA814;
+    border-top-color: #e2eefd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+}
+
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #4DA814;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+    background: #4DA814;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+    background: #4DA814;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    color: white;
+}
+
+#topbar.topbar-scrolled {
+    top: -40px;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: white;
+    transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+    text-decoration: underline;
+}
+
+#topbar .contact-info i {
+    padding-right: 4px;
+    margin-left: 15px;
+}
+
+#topbar .contact-info i:first-child {
+    margin-left: 0;
+}
+
+#topbar .social-links a {
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+    color: white;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    background: white;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 25px 0;
+    top: 40px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header.header-scrolled {
+    top: 0;
+    padding: 15px;
+}
+
+#header .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-family: "Poppins", sans-serif;
+}
+
+#header .logo a {
+    color: #C8D33A;
+}
+
+#header .logo a span {
+    color: ##4DA814;
+}
+
+#header .logo img {
+    max-height: 40px;
+}
+
+@media (max-width: 992px) {
+    #header {
+        padding: 15px;
+        top: 0;
+    }
+    #header .logo {
+        font-size: 28px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Desktop Navigation */
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu>ul {
+    display: flex;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+}
+
+.nav-menu a {
+    display: block;
+    position: relative;
+    color: #222222;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 3px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-menu>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #C8D33A;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover>a:before,
+.nav-menu .active>a:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    color: #4DA814;
+}
+
+.nav-menu .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 26px;
+    top: calc(100% + 30px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.nav-menu .drop-down:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.nav-menu .drop-down li {
+    min-width: 180px;
+    position: relative;
+}
+
+.nav-menu .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: black;
+}
+
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active>a,
+.nav-menu .drop-down ul li:hover>a {
+    color: black;
+}
+
+.nav-menu .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 5px;
+}
+
+.nav-menu .drop-down .drop-down ul {
+    top: 0;
+    left: calc(100% - 30px);
+}
+
+.nav-menu .drop-down .drop-down:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+}
+
+.nav-menu .drop-down .drop-down>a {
+    padding-right: 35px;
+}
+
+.nav-menu .drop-down .drop-down>a:after {
+    content: "\eaa0";
+    font-family: IcoFont;
+    position: absolute;
+    right: 15px;
+}
+
+@media (max-width: 1366px) {
+    .nav-menu .drop-down .drop-down ul {
+        left: -90%;
+    }
+    .nav-menu .drop-down .drop-down:hover>ul {
+        left: -100%;
+    }
+    .nav-menu .drop-down .drop-down>a:after {
+        content: "\ea9d";
+    }
+}
+
+
+/* Mobile Navigation */
+
+.mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.mobile-nav-toggle i {
+    color: #222222;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav a {
+    display: block;
+    position: relative;
+    color: #222222;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
+    color: #4DA814;
+    text-decoration: none;
+}
+
+.mobile-nav .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+}
+
+.mobile-nav .active.drop-down>a:after {
+    content: "\eaa1";
+}
+
+.mobile-nav .drop-down>a {
+    padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+    display: none;
+    overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+    padding-left: 20px;
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(9, 9, 9, 0.6);
+    overflow: hidden;
+    display: none;
+    transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 90vh;
+    background: url("../img/makanan\ sunda.jpg") top left;
+    background-size: cover;
+    position: relative;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(77, 168, 20, .3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .container {
+    position: relative;
+    padding-top: 132px;
+}
+
+@media (max-width: 992px) {
+    #hero .container {
+        padding-top: 58px;
+    }
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero h1 span {
+    color: #C8D33A;
+}
+
+#hero h2 {
+    color: white;
+    margin: 5px 0 30px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about {
+    padding-bottom: 100px;
+}
+
+.about p {
+    color: #0B0B0A;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+section h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #C8D33A;
+    margin-bottom: 25px;
+}
+
+.menurekomend p {
+    text-align: center;
+    color: #0B0B0A;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+.menurekomendasi {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.menurekomendasi h2 {
+    font-size: 18px;
+    line-height: 2em;
+    text-align: center;
+    padding-top: 30px;
+    color: #4DA814;
+    font-weight: bold;
+    font-family: 'Sriracha', cursive;
+}
+
+.menurekomendasi p {
+    font-size: 18px;
+    line-height: 2em;
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    font-family: 'Sriracha', cursive;
+}
+
+.menurekomendasi img {
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 40vh;
+    border-radius: 25px;
+    box-shadow: -1px 1px 16px 3px rgb(102, 101, 101)
+}
+
+.lihatmenu {
+    color: #4DA814;
+    text-align: center;
+}
+
+@media (max-height: 500px) {
+    #hero {
+        height: 120vh;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+.testimonials {
+    padding: 80px 0;
+    background: url("../img/makanan\ sunda2.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.testimonials::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.testimonials .section-header {
+    margin-bottom: 40px;
+}
+
+.testimonials .testimonial-item {
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #ddd;
+    margin: 0 0 15px 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    color: #eee;
+}
+
+.testimonials .owl-nav,
+.testimonials .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.testimonials .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.testimonials .owl-dot.active {
+    background-color: #4DA814 !important;
+}
+
+@media (min-width: 1024px) {
+    .testimonials {
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials .testimonial-item p {
+        width: 80%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact .info-box {
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+    padding: 20px 0 30px 0;
+}
+
+.contact .info-box i {
+    font-size: 32px;
+    color: #4DA814;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #4DA814;
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #4DA814;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact .php-email-form {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+    padding: 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+    padding: 15px 0;
+    background-color: #4DA814;
+    color: #fff;
+    text-align: center;
+}
+
+footer .container h4 h5 {
+    color: #C8D33A;
+}
+
+@media (max-width: 768px) {
+    #footer .copyright,
+    #footer .credits {
+        float: none;
+        text-align: center;
+        padding: 2px 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Tentang
+--------------------------------------------------------------*/
+
+.menuraos p {
+    text-align: center;
+    color: #0B0B0A;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.menuraos h3 {
+    font-size: 40px;
+}
+
+.menurek h5 {
+    font-size: 20px;
+    color: #4DA814;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+}
+
+.card p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0B0B0A;
+    text-align: center;
+}
+
+.menurek .row .card:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+}
+
+.menurek a {
+    color: white;
+}
+
+.menurek .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.pagination {
+    margin: 20px 0 10px 0;
+}
+
+.pagination,
+.pagination li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination li {
+    background: #4DA814;
+    list-style: none;
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: #fdfdfd;
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    padding-top: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-right-width: 0px;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+}
+
+.paket p {
+    text-align: center;
+    color: #0B0B0A;
+}
+
+.menupaket h2 {
+    color: #4DA814;
+    font-weight: bold;
+    font-family: 'Sriracha', cursive;
+}
+
+.menupaket a {
+    color: white;
+    float: right;
+    margin-right: 15px;
+}
+
+.menupaket p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.menupaket .card .row:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+}
+
+.menupaket .card .row {
+    background-color: #E9ECE7;
+}
+
+
+/*--------------------------------------------------------------
+# Order
+--------------------------------------------------------------*/
+
+.order {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-responsive {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    position: center;
+}
+
+.order-label {
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.media-body h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    max-width: 800px;
+    text-align: left;
+}
+
+.iconcontact {
+    min-width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container-contact {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(assets/img/makanansunda.JPG);
+    background-size: cover;
+}
+
+.containercontact1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: column;
+}
+
+.containercontact1 .contactInfo1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------------------------------------------------------------
+# Pesanan
+--------------------------------------------------------------*/
+
+.btn-danger4 {
+    background-color: #ff6b81;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-secondary4 {
+    background-color: #7bed9f;
+    padding: 2%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning4 {
+    background-color: #F4CB4D;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning4:hover {
+    background-color: #FFC300;
+}
+
+.btn-danger4:hover {
+    background-color: #ff4757;
+}
+
+.btn-secondary4:hover {
+    background-color: #2ed573;
+}
+
+.table3 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #f2f5f7;
+}
+
+.table3 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table3 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table3 tr th {
+    background: #A0E175;
+    color: #fff;
+    font-weight: normal;
+}
+
+.table3,
+th,
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.main-content10 {
+    background-color: white;
+    padding: 3% 0;
+}
+
+.wrapper10 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-content10 .table3 {
+    border-radius: 10px;
+}
+
+.table3 img {
+    width: 100px;
+}
+
+.table3,
+b {
+    color: black;
+}
+
+.table3,
+tr {
+    color: black;
+}
+
+.table3 input {
+    width: 70px;
+}
+
+.keranjang1 {
+    background-color: white;
+    padding-left: 500px;
+}
+
+.keranjang1 p {
+    font-size: 20px;
+    color: black;
+}
+
+.table4 tr td {
+    width: 100px;
+    background: #DEDDDC;
+    border: 1px solid black;
+}
+
+.table3 tr {
+    border-radius: 10px;
+}
+
+.datetimepicker input {
+    width: 70px;
+}
+
+.DataPembeli {
+    background-color: white;
+    padding: 3% 0;
+}
+
+.wrapper11 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper12 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+# Success
+--------------------------------------------------------------*/
+
+.table12 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #f2f5f7;
+}
+
+.table12 tr th {
+    background: #B9BCB7;
+    color: black;
+    font-weight: normal;
+}
+
+.table12,
+th,
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.table12 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table12 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.wrapper12 h1 {
+    font-size: 30px;
+}
+
+.wrapper10 h1 {
+    font-size: 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Pembayaran
+--------------------------------------------------------------*/
+
+.wrapper13 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table13 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.table13 tr th {
+    background: white;
+    color: black;
+    font-weight: normal;
+}
+
+.table13,
+th,
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.table13 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table13 tr:nth-child(even) {
+    background-color: #A0E175;
+}
+
+.wrapper13 h1 {
+    font-size: 30px;
+}
+
+.table13 th {
+    background: white;
+}
+
+
+/*--------------------------------------------------------------
+# Bukti
+--------------------------------------------------------------*/
+
+.wrapper14 {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pembayaran2 {
+    padding: 1%;
+    margin: 0 auto;
+    width: 50%;
+}

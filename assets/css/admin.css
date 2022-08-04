@@ -1,0 +1,402 @@
+/*
+    Author: Edita Aulia;
+    Theme: Condong Raos;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.admin {
+    text-align: center;
+    color: black;
+}
+
+.admin h3 {
+    font-weight: 100px;
+}
+
+.tbl-full {
+    width: 100%;
+}
+
+.tbl-30 {
+    width: 30%;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
+}
+
+.btn-primary {
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #3742fa;
+}
+
+.btn-secondary {
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #2ed573;
+}
+
+.btn-danger {
+    background-color: #ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #ff4757;
+}
+
+
+/* CSS for Menu*/
+
+.menu {
+    border-bottom: 1px solid grey;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4DA814;
+}
+
+.menu ul li a:hover {
+    color: #4DA814;
+}
+
+
+/* CSS for Main-Content */
+
+.main-content {
+    background-color: white;
+    padding: 3% 0;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+
+/* CSS for Footer */
+
+.footer {
+    background-color: #4DA814;
+    color: white;
+}
+
+.table1 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #f2f5f7;
+}
+
+.table1 tr th {
+    background: #4DA814;
+    color: #fff;
+    font-weight: normal;
+}
+
+.table1,
+th,
+td {
+    padding: 40px 80px;
+    text-align: left;
+}
+
+.table1 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* CSS for Data User */
+
+.btn-danger1 {
+    background-color: #ff6b81;
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-secondary1 {
+    background-color: #7bed9f;
+    padding: 3%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-danger1:hover {
+    background-color: #ff4757;
+}
+
+.btn-secondary1:hover {
+    background-color: #2ed573;
+}
+
+
+/* CSS for Data Produk */
+
+.btn-danger2 {
+    background-color: #ff6b81;
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-secondary2 {
+    background-color: #7bed9f;
+    padding: 3%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-danger2:hover {
+    background-color: #ff4757;
+}
+
+.btn-secondary2:hover {
+    background-color: #2ed573;
+}
+
+
+/* CSS for Data Kota Ongkir */
+
+.btn-danger3 {
+    background-color: #ff6b81;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-secondary3 {
+    background-color: #7bed9f;
+    padding: 2%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-danger3:hover {
+    background-color: #ff4757;
+}
+
+.btn-secondary3:hover {
+    background-color: #2ed573;
+}
+
+
+/* CSS for Data Pesanan */
+
+.btn-danger4 {
+    background-color: #ff6b81;
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary1 {
+    background-color: #1e90ff;
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-secondary4 {
+    background-color: #7bed9f;
+    padding: 3%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning4 {
+    background-color: #F4CB4D;
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning4:hover {
+    background-color: #FFC300;
+}
+
+.btn-danger4:hover {
+    background-color: #ff4757;
+}
+
+.btn-secondary4:hover {
+    background-color: #2ed573;
+}
+
+.table2 {
+    font-family: sans-serif;
+    color: #444;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #f2f5f7;
+}
+
+.table2 tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* CSS for Pembayaran */
+
+.btn-secondary5 {
+    background-color: #7bed9f;
+    padding: 2%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning5 {
+    background-color: #F4CB4D;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-warning5:hover {
+    background-color: #FFC300;
+}
+
+.btn-secondary5:hover {
+    background-color: #2ed573;
+}
+
+
+/* CSS for Detail Pembayaran */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
